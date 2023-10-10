@@ -1,0 +1,11 @@
+flutter_native_splash:
+  color: "#ffffff"
+  color_dark: "#272727"
+  image: assets/logos/pakcraftonline-logo.jpg
+  image_dark: assets/logos/pakcraftonline-logo.jpg
+  android_12:
+    color: "#ffffff"
+    color_dark: "#272727"
+    image: assets/logos/pakcraftonline-logo.jpg
+    image_dark: assets/logos/pakcraftonline-logo.jpg
+  web: false
