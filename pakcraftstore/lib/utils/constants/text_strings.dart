@@ -16,5 +16,9 @@ class TTexts{
   //authentication form texts
   static const String firstName = "First Name";
   static const String lastName = "Last Name";
+  static const String verifyEmailTitle = "Verify your Email Address!";
+  static const String verifyEmailSubTitle = "Congratulation, a Verification Email has been sent to your email address. Please verify your email address by clicking link in verification email";
+  static const String createdAccountTitle = "Your Account has been created!";
+  static const String createdAccountSubTitle = "Congratulation, Your Email has been verified and your account has been created successfully.";
 
 }

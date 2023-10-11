@@ -38,7 +38,7 @@ class TSocialButtons extends StatelessWidget {
             icon: const Image(
               width: TSizes.iconMd,
               height: TSizes.iconMd,
-              image: AssetImage(TImages.google),
+              image: AssetImage(TImages.facebook),
             ),
           ),
         ),

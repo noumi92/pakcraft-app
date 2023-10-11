@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:pakcraftstore/features/authentication/views/signup/verify_email_view.dart';
 import 'package:pakcraftstore/utils/constants/colors.dart';
 import 'package:pakcraftstore/utils/constants/sizes.dart';
+import 'package:get/get.dart';
 
 class SignUpForm extends StatelessWidget {
   const SignUpForm({
@@ -105,7 +107,9 @@ class SignUpForm extends StatelessWidget {
             /// --Signup Buttons
             const SizedBox(height: TSizes.spaceBtwItems,),
             SizedBox(width: double.infinity, child: ElevatedButton(
-              onPressed: (){},
+              onPressed: (){
+                Get.to(VerifyEmailView());
+              },
               child: Text("Create Account", style: Theme.of(context).textTheme.labelMedium,),
             ),),
           ],
