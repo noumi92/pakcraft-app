@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:pakcraftstore/common/widgets/navigation/view/navigation_menu.dart';
 import 'package:pakcraftstore/features/authentication/views/login/login_view.dart';
 import 'package:pakcraftstore/features/authentication/views/password_config/forgot_password_view.dart';
 import 'package:pakcraftstore/features/authentication/views/signup/signup_view.dart';
@@ -68,7 +69,9 @@ class TLoginForm extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {}, child: const Text("Sign In")),
+                    onPressed: () {
+                      Get.to(NavigationMenu());
+                    }, child: const Text("Sign In")),
               ),
               const SizedBox(
                 height: TSizes.spaceBtwItems,
