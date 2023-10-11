@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:pakcraftstore/features/authentication/views/login/login_view.dart';
 
 class OnboardingController extends GetxController{
   static OnboardingController get instance => Get.find();
@@ -16,7 +17,7 @@ class OnboardingController extends GetxController{
   /// update current index and jump to next page
   void nextPage(){
     if(currentPageIndex.value == 2){
-      //Get.to(LoginView());
+      Get.to(LoginView());
     }else{
       currentPageIndex.value += 1;
       pageController.jumpToPage(currentPageIndex.value);
