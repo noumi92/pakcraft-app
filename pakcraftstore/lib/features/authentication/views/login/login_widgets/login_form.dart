@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:pakcraftstore/features/authentication/views/login/login_view.dart';
+import 'package:pakcraftstore/features/authentication/views/signup/signup_view.dart';
 import 'package:pakcraftstore/utils/constants/sizes.dart';
+import 'package:get/get.dart';
 
 class TLoginForm extends StatelessWidget {
   const TLoginForm({
@@ -72,7 +75,9 @@ class TLoginForm extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
-                    onPressed: () {}, child: const Text("Create Account")),
+                    onPressed: () {
+                      Get.to(const SignupView());
+                    }, child: const Text("Create Account")),
               ),
             ],
           ),
