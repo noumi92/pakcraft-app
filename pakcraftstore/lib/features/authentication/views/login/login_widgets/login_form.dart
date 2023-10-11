@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:pakcraftstore/features/authentication/views/login/login_view.dart';
+import 'package:pakcraftstore/features/authentication/views/password_config/forgot_password_view.dart';
 import 'package:pakcraftstore/features/authentication/views/signup/signup_view.dart';
 import 'package:pakcraftstore/utils/constants/sizes.dart';
 import 'package:get/get.dart';
@@ -53,7 +54,9 @@ class TLoginForm extends StatelessWidget {
 
                   /// ---Forget password
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(const ForgotPasswordView());
+                      },
                       child: const Text("Forget Password")),
                 ],
               ),

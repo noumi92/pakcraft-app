@@ -110,7 +110,7 @@ class SignUpForm extends StatelessWidget {
               onPressed: (){
                 Get.to(VerifyEmailView());
               },
-              child: Text("Create Account", style: Theme.of(context).textTheme.labelMedium,),
+              child: Text("Create Account"),
             ),),
           ],
         ),
