@@ -1,16 +1,18 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:pakcraftstore/common/custom_shapes/containers/circular_container.dart';
 import 'package:pakcraftstore/common/custom_shapes/containers/primary_header_container.dart';
 import 'package:pakcraftstore/utils/constants/colors.dart';
 import 'package:pakcraftstore/utils/constants/image_strings.dart';
 import 'package:pakcraftstore/utils/constants/sizes.dart';
-import 'package:pakcraftstore/utils/device/device_utility.dart';
-import 'package:pakcraftstore/utils/helpers/helper_functions.dart';
-import '../../../../common/widgets/image_text_widgets/vertical_image_text.dart';
+import '../../../../common/widgets/images/rounded_image.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
+import '../../controllers/home_controller.dart';
 import 'widgets/home_appbar.dart';
 import 'widgets/home_categories.dart';
+import 'widgets/promo_slider.dart';
 import 'widgets/search_container.dart';
 
 class HomeView extends StatelessWidget {
@@ -55,11 +57,21 @@ class HomeView extends StatelessWidget {
                 THomeCategories()
               ],
             ),
-          )
+          ),
+
+          /// -body
+          Padding(
+              padding: EdgeInsets.all(TSizes.defaultSpace),
+              child: TPromoSlider(
+                banners: [
+                  TImages.banner1,
+                  TImages.banner2,
+                  TImages.banner3,
+                  TImages.banner4,
+                ],
+              ))
         ],
       )),
     );
   }
 }
-
-
